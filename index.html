@@ -1,16 +1,39 @@
 <!doctype html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Hello World !</title>
-  <meta name="description" content="Hello World !">
-  <meta name="author" content="MK-JSI">
-  <link rel="stylesheet" href="style.css">
-</head>
+	<head>
+        <meta charset="utf-8">
+        <title>Hello World !</title>
+        <meta name="description" content="Hello World !">
+        <meta name="author" content="MK-JSI">
+	    
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" href="style/style.css">
+        
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script src="js/cordova.js"></script>
+        <script src="js/script.js"></script>
+	</head>
 
-<body>
-  <script src="js/script.js"></script>
-  <button onclick="helloWorld();">Click me!</button>
-</body>
+	<body>
+		<div data-role="page">
+			<div data-role="header">
+				<h1>MK Hello</h1>
+			</div>
+			
+			<div data-role="content">
+				<ul data-role="list-view">
+					<li>Item 1</li>
+					<li>Item 2</li>
+					<li>Item 3</li>
+				</ul>
+				<button onclick="helloWorld();">Click me!</button>		
+			</div>
+			
+			<div data-role="footer">
+				@2015 MK
+			</div>
+		</div>
+	</body>
 </html>
